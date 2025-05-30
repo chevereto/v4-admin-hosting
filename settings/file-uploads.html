@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>File upload | V4 Admin</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.svg">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/logo.svg">
+    <link rel="mask-icon" href="/logo.svg" color="#3eaf7c">
+    <meta name="description" content="Chevereto V4 Admin Manual">
+    <meta property="og:site_name" content="V4 Admin">
+    <meta property="og:title" content="File upload">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/settings/file-uploads.html">
+    <meta name="twitter:title" content="File upload">
+    <meta name="twitter:url" content="/settings/file-uploads.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#23a8e0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/logo.svg">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.bcdb329e.css" as="style"><link rel="preload" href="/assets/js/app.8c92776e.js" as="script"><link rel="preload" href="/assets/js/2.2e795948.js" as="script"><link rel="preload" href="/assets/js/1.92b2004f.js" as="script"><link rel="preload" href="/assets/js/39.cae2dcf3.js" as="script"><link rel="prefetch" href="/assets/js/10.9367db1f.js"><link rel="prefetch" href="/assets/js/11.de003c14.js"><link rel="prefetch" href="/assets/js/12.d610f66c.js"><link rel="prefetch" href="/assets/js/13.d6ee1c40.js"><link rel="prefetch" href="/assets/js/14.9894935c.js"><link rel="prefetch" href="/assets/js/15.a8558ca1.js"><link rel="prefetch" href="/assets/js/16.f599e15e.js"><link rel="prefetch" href="/assets/js/17.8dd8ef3c.js"><link rel="prefetch" href="/assets/js/18.e459599a.js"><link rel="prefetch" href="/assets/js/19.d6a6f12a.js"><link rel="prefetch" href="/assets/js/20.7430095b.js"><link rel="prefetch" href="/assets/js/21.fc63aa48.js"><link rel="prefetch" href="/assets/js/22.148f91b7.js"><link rel="prefetch" href="/assets/js/23.a9bb796e.js"><link rel="prefetch" href="/assets/js/24.9029fc83.js"><link rel="prefetch" href="/assets/js/25.d09ed19f.js"><link rel="prefetch" href="/assets/js/26.344dabc5.js"><link rel="prefetch" href="/assets/js/27.bf3ea66b.js"><link rel="prefetch" href="/assets/js/28.5707725b.js"><link rel="prefetch" href="/assets/js/29.35818492.js"><link rel="prefetch" href="/assets/js/3.8e2e7b4a.js"><link rel="prefetch" href="/assets/js/30.abaf91a4.js"><link rel="prefetch" href="/assets/js/31.d5e54086.js"><link rel="prefetch" href="/assets/js/32.48726c8e.js"><link rel="prefetch" href="/assets/js/33.bc081b9d.js"><link rel="prefetch" href="/assets/js/34.bf522987.js"><link rel="prefetch" href="/assets/js/35.1d41c40a.js"><link rel="prefetch" href="/assets/js/36.f95c7262.js"><link rel="prefetch" href="/assets/js/37.feba0e58.js"><link rel="prefetch" href="/assets/js/38.ccad916e.js"><link rel="prefetch" href="/assets/js/4.70d5a8e2.js"><link rel="prefetch" href="/assets/js/40.e1a06b03.js"><link rel="prefetch" href="/assets/js/41.3017f12f.js"><link rel="prefetch" href="/assets/js/42.480ee497.js"><link rel="prefetch" href="/assets/js/43.7cbc7829.js"><link rel="prefetch" href="/assets/js/44.053e3752.js"><link rel="prefetch" href="/assets/js/45.d62f31ec.js"><link rel="prefetch" href="/assets/js/46.46e284a1.js"><link rel="prefetch" href="/assets/js/47.629c8417.js"><link rel="prefetch" href="/assets/js/48.63949acf.js"><link rel="prefetch" href="/assets/js/49.b0f3bfab.js"><link rel="prefetch" href="/assets/js/5.85757ca3.js"><link rel="prefetch" href="/assets/js/50.a3cffc5e.js"><link rel="prefetch" href="/assets/js/51.8e0a8723.js"><link rel="prefetch" href="/assets/js/52.0c5157d6.js"><link rel="prefetch" href="/assets/js/53.333d81aa.js"><link rel="prefetch" href="/assets/js/54.522af6af.js"><link rel="prefetch" href="/assets/js/55.f6c7bdad.js"><link rel="prefetch" href="/assets/js/56.ac1fc486.js"><link rel="prefetch" href="/assets/js/57.6e0dfc28.js"><link rel="prefetch" href="/assets/js/58.274abc06.js"><link rel="prefetch" href="/assets/js/59.6345482c.js"><link rel="prefetch" href="/assets/js/6.583452d9.js"><link rel="prefetch" href="/assets/js/7.b0b5044e.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.89026c5a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bcdb329e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="V4 Admin" class="logo"> <span class="site-name can-hide">V4 Admin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/account/" class="nav-link">
+  Account
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dashboard Menu" class="dropdown-title"><span class="title">Dashboard</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dashboard Menu" class="mobile-dropdown-title"><span class="title">Dashboard</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dashboard/stats.html" class="nav-link">
+  Stats
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/images.html" class="nav-link">
+  Images
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/albums.html" class="nav-link">
+  Albums
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/users.html" class="nav-link">
+  Users
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/bulk-importer.html" class="nav-link">
+  Bulk importer
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/settings.html" class="nav-link">
+  Settings
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Settings Menu" class="dropdown-title"><span class="title">Settings</span> <span class="arrow down"></span></button> <button type="button" aria-label="Settings Menu" class="mobile-dropdown-title"><span class="title">Settings</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/settings/website.html" class="nav-link">
+  Website
+</a></li><li class="dropdown-item"><!----> <a href="/settings/content.html" class="nav-link">
+  Content
+</a></li><li class="dropdown-item"><!----> <a href="/settings/listings.html" class="nav-link">
+  Listings
+</a></li><li class="dropdown-item"><!----> <a href="/settings/semantics.html" class="nav-link">
+  Semantics
+</a></li><li class="dropdown-item"><!----> <a href="/settings/categories.html" class="nav-link">
+  Categories
+</a></li><li class="dropdown-item"><!----> <a href="/settings/theme.html" class="nav-link">
+  Theme
+</a></li><li class="dropdown-item"><!----> <a href="/settings/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-item"><!----> <a href="/settings/languages.html" class="nav-link">
+  Languages
+</a></li><li class="dropdown-item"><!----> <a href="/settings/email.html" class="nav-link">
+  Email
+</a></li><li class="dropdown-item"><!----> <a href="/settings/tools.html" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/settings/logo.html" class="nav-link">
+  Logo
+</a></li><li class="dropdown-item"><!----> <a href="/settings/external-services.html" class="nav-link">
+  External services
+</a></li><li class="dropdown-item"><!----> <a href="/settings/homepage.html" class="nav-link">
+  Homepage
+</a></li><li class="dropdown-item"><!----> <a href="/settings/pages.html" class="nav-link">
+  Pages
+</a></li><li class="dropdown-item"><!----> <a href="/settings/routing.html" class="nav-link">
+  Routing
+</a></li><li class="dropdown-item"><!----> <a href="/settings/upload-storage.html" class="nav-link">
+  Upload storage
+</a></li><li class="dropdown-item"><!----> <a href="/settings/login-providers.html" class="nav-link">
+  Login providers
+</a></li><li class="dropdown-item"><!----> <a href="/settings/upload-plugin.html" class="nav-link">
+  Upload plugin
+</a></li><li class="dropdown-item"><!----> <a href="/settings/cookie-compliance.html" class="nav-link">
+  Cookie compliance
+</a></li><li class="dropdown-item"><!----> <a href="/settings/consent-screen.html" class="nav-link">
+  Consent screen
+</a></li><li class="dropdown-item"><!----> <a href="/settings/flood-protection.html" class="nav-link">
+  Flood protection
+</a></li><li class="dropdown-item"><!----> <a href="/settings/banners.html" class="nav-link">
+  Banners
+</a></li><li class="dropdown-item"><!----> <a href="/settings/ip-bans.html" class="nav-link">
+  IP Bans
+</a></li><li class="dropdown-item"><!----> <a href="/settings/users.html" class="nav-link">
+  Users
+</a></li><li class="dropdown-item"><!----> <a href="/settings/guest-api.html" class="nav-link">
+  Guest API
+</a></li><li class="dropdown-item"><!----> <a href="/settings/watermarks.html" class="nav-link">
+  Watermarks
+</a></li><li class="dropdown-item"><!----> <a href="/settings/file-uploads.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  File uploads
+</a></li><li class="dropdown-item"><!----> <a href="/settings/site-storage.html" class="nav-link">
+  Site storage
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Features Menu" class="dropdown-title"><span class="title">Features</span> <span class="arrow down"></span></button> <button type="button" aria-label="Features Menu" class="mobile-dropdown-title"><span class="title">Features</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/features/upload-storage.html" class="nav-link">
+  Upload storage
+</a></li><li class="dropdown-item"><!----> <a href="/features/login-providers.html" class="nav-link">
+  Login providers
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/account/" class="nav-link">
+  Account
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dashboard Menu" class="dropdown-title"><span class="title">Dashboard</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dashboard Menu" class="mobile-dropdown-title"><span class="title">Dashboard</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dashboard/stats.html" class="nav-link">
+  Stats
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/images.html" class="nav-link">
+  Images
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/albums.html" class="nav-link">
+  Albums
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/users.html" class="nav-link">
+  Users
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/bulk-importer.html" class="nav-link">
+  Bulk importer
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/settings.html" class="nav-link">
+  Settings
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Settings Menu" class="dropdown-title"><span class="title">Settings</span> <span class="arrow down"></span></button> <button type="button" aria-label="Settings Menu" class="mobile-dropdown-title"><span class="title">Settings</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/settings/website.html" class="nav-link">
+  Website
+</a></li><li class="dropdown-item"><!----> <a href="/settings/content.html" class="nav-link">
+  Content
+</a></li><li class="dropdown-item"><!----> <a href="/settings/listings.html" class="nav-link">
+  Listings
+</a></li><li class="dropdown-item"><!----> <a href="/settings/semantics.html" class="nav-link">
+  Semantics
+</a></li><li class="dropdown-item"><!----> <a href="/settings/categories.html" class="nav-link">
+  Categories
+</a></li><li class="dropdown-item"><!----> <a href="/settings/theme.html" class="nav-link">
+  Theme
+</a></li><li class="dropdown-item"><!----> <a href="/settings/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-item"><!----> <a href="/settings/languages.html" class="nav-link">
+  Languages
+</a></li><li class="dropdown-item"><!----> <a href="/settings/email.html" class="nav-link">
+  Email
+</a></li><li class="dropdown-item"><!----> <a href="/settings/tools.html" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/settings/logo.html" class="nav-link">
+  Logo
+</a></li><li class="dropdown-item"><!----> <a href="/settings/external-services.html" class="nav-link">
+  External services
+</a></li><li class="dropdown-item"><!----> <a href="/settings/homepage.html" class="nav-link">
+  Homepage
+</a></li><li class="dropdown-item"><!----> <a href="/settings/pages.html" class="nav-link">
+  Pages
+</a></li><li class="dropdown-item"><!----> <a href="/settings/routing.html" class="nav-link">
+  Routing
+</a></li><li class="dropdown-item"><!----> <a href="/settings/upload-storage.html" class="nav-link">
+  Upload storage
+</a></li><li class="dropdown-item"><!----> <a href="/settings/login-providers.html" class="nav-link">
+  Login providers
+</a></li><li class="dropdown-item"><!----> <a href="/settings/upload-plugin.html" class="nav-link">
+  Upload plugin
+</a></li><li class="dropdown-item"><!----> <a href="/settings/cookie-compliance.html" class="nav-link">
+  Cookie compliance
+</a></li><li class="dropdown-item"><!----> <a href="/settings/consent-screen.html" class="nav-link">
+  Consent screen
+</a></li><li class="dropdown-item"><!----> <a href="/settings/flood-protection.html" class="nav-link">
+  Flood protection
+</a></li><li class="dropdown-item"><!----> <a href="/settings/banners.html" class="nav-link">
+  Banners
+</a></li><li class="dropdown-item"><!----> <a href="/settings/ip-bans.html" class="nav-link">
+  IP Bans
+</a></li><li class="dropdown-item"><!----> <a href="/settings/users.html" class="nav-link">
+  Users
+</a></li><li class="dropdown-item"><!----> <a href="/settings/guest-api.html" class="nav-link">
+  Guest API
+</a></li><li class="dropdown-item"><!----> <a href="/settings/watermarks.html" class="nav-link">
+  Watermarks
+</a></li><li class="dropdown-item"><!----> <a href="/settings/file-uploads.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  File uploads
+</a></li><li class="dropdown-item"><!----> <a href="/settings/site-storage.html" class="nav-link">
+  Site storage
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Features Menu" class="dropdown-title"><span class="title">Features</span> <span class="arrow down"></span></button> <button type="button" aria-label="Features Menu" class="mobile-dropdown-title"><span class="title">Features</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/features/upload-storage.html" class="nav-link">
+  Upload storage
+</a></li><li class="dropdown-item"><!----> <a href="/features/login-providers.html" class="nav-link">
+  Login providers
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>File upload</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/settings/file-uploads.html#enabled-file-extensions" class="sidebar-link">Enabled file extensions</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#enable-uploads" class="sidebar-link">Enable uploads</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#enable-uploads-url" class="sidebar-link">Enable uploads (URL)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#upload-user-interface" class="sidebar-link">Upload user interface</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#guest-uploads" class="sidebar-link">Guest uploads</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#moderate-uploads" class="sidebar-link">Moderate uploads</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#not-safe-content-checkbox-in-uploader" class="sidebar-link">Not safe content checkbox in uploader</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#enable-embed-codes-uploader" class="sidebar-link">Enable embed codes (uploader)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#upload-threads" class="sidebar-link">Upload threads</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#redirect-on-single-upload" class="sidebar-link">Redirect on single upload</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#enable-duplicate-uploads" class="sidebar-link">Enable duplicate uploads</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#enable-expirable-uploads" class="sidebar-link">Enable expirable uploads</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#auto-delete-guest-uploads" class="sidebar-link">Auto delete guest uploads</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#maximum-image-size" class="sidebar-link">Maximum image size</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#image-exif-data" class="sidebar-link">Image Exif data</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#image-exif-data-user-setting" class="sidebar-link">Image Exif data (user setting)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#maximum-upload-file-size-mb" class="sidebar-link">Maximum upload file size [MB]</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#maximum-upload-file-size-guests" class="sidebar-link">Maximum upload file size (guests)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#file-path" class="sidebar-link">File path</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#storage-mode" class="sidebar-link">Storage mode</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#file-naming-method" class="sidebar-link">File naming method</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#thumb-size" class="sidebar-link">Thumb size</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#medium-image-fixed-dimension" class="sidebar-link">Medium image fixed dimension</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/settings/file-uploads.html#medium-image-fixed-size" class="sidebar-link">Medium image fixed size</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="file-upload"><a href="#file-upload" class="header-anchor">#</a> File upload</h1> <p><code>/dashboard/settings/file-upload</code></p> <p>This control the settings related to file uploading.</p> <h2 id="enabled-file-extensions"><a href="#enabled-file-extensions" class="header-anchor">#</a> Enabled file extensions</h2> <p>Determines which file formats can be uploaded.</p> <div class="custom-block tip"><p class="custom-block-title">✅ Formats supported</p> <p>JPG JPEG PNG BMP GIF WEBP MOV MP4 WEBM</p></div> <h2 id="enable-uploads"><a href="#enable-uploads" class="header-anchor">#</a> Enable uploads</h2> <p>Toggles the file upload functionality.</p> <h2 id="enable-uploads-url"><a href="#enable-uploads-url" class="header-anchor">#</a> Enable uploads (URL)</h2> <p>Toggles the file upload functionality from URL.</p> <h2 id="upload-user-interface"><a href="#upload-user-interface" class="header-anchor">#</a> Upload user interface</h2> <p>Determines how the upload will be displayed.</p> <table><thead><tr><th>Value</th> <th>Effect</th></tr></thead> <tbody><tr><td>On-page container</td> <td>Uses a JS uploader that stays in page</td></tr> <tr><td>/upload route</td> <td>Drives users towards the upload page</td></tr></tbody></table> <h2 id="guest-uploads"><a href="#guest-uploads" class="header-anchor">#</a> Guest uploads</h2> <p>Same as <a href="#enable-uploads">enable uploads</a>, but for guest users.</p> <h2 id="moderate-uploads"><a href="#moderate-uploads" class="header-anchor">#</a> Moderate uploads</h2> <p>Determines if incoming uploads must be moderated or not.</p> <table><thead><tr><th>Value</th> <th>Effect</th></tr></thead> <tbody><tr><td>Disabled</td> <td>No moderation required</td></tr> <tr><td>Guest</td> <td>Moderate guest uploads</td></tr> <tr><td>All</td> <td>Moderate all uploads</td></tr></tbody></table> <h2 id="not-safe-content-checkbox-in-uploader"><a href="#not-safe-content-checkbox-in-uploader" class="header-anchor">#</a> Not safe content checkbox in uploader</h2> <p>Toggles the display of the NSFW checkbox.</p> <table><thead><tr><th>Value</th> <th>Effect</th></tr></thead> <tbody><tr><td>Enabled</td> <td>Enable display of NSFW checkbox</td></tr> <tr><td>Disabled</td> <td>DIsable display of NSFW checkbox</td></tr></tbody></table> <h2 id="enable-embed-codes-uploader"><a href="#enable-embed-codes-uploader" class="header-anchor">#</a> Enable embed codes (uploader)</h2> <p>Toggles the display of embed codes after upload process.</p> <h2 id="upload-threads"><a href="#upload-threads" class="header-anchor">#</a> Upload threads</h2> <p>Determines the number of parallel threads used by the uploader. This setting should be configured according to the installed hardware and the usage of your website.</p> <h2 id="redirect-on-single-upload"><a href="#redirect-on-single-upload" class="header-anchor">#</a> Redirect on single upload</h2> <p>Toggles the HTTP redirection on single image upload. When enabled, users will be redirected to the image viewer.</p> <div class="custom-block warning"><p class="custom-block-title">Moderate uploads</p> <p>This setting should be disabled if <a href="#moderate-uploads">moderate upload</a> is enabled. This is because the viewer URL will return <code>HTTP 403</code> until the image <strong>gets approved</strong>.</p></div> <h2 id="enable-duplicate-uploads"><a href="#enable-duplicate-uploads" class="header-anchor">#</a> Enable duplicate uploads</h2> <p>Toggles the acceptance of duplicate uploads.</p> <h2 id="enable-expirable-uploads"><a href="#enable-expirable-uploads" class="header-anchor">#</a> Enable expirable uploads</h2> <p>Toggles the availability of expirable uploads, which will get automatically removed after a certain date.</p> <h2 id="auto-delete-guest-uploads"><a href="#auto-delete-guest-uploads" class="header-anchor">#</a> Auto delete guest uploads</h2> <p>Determines the automatic deletion of guest uploads.</p> <h2 id="maximum-image-size"><a href="#maximum-image-size" class="header-anchor">#</a> Maximum image size</h2> <p>Determines the maximum size (in pixels) allowed for image uploads. Larger images will get automatically downscale.</p> <h2 id="image-exif-data"><a href="#image-exif-data" class="header-anchor">#</a> Image Exif data</h2> <p>Toggles the handling of image <a href="https://en.wikipedia.org/wiki/Exif" target="_blank" rel="noopener noreferrer">Exif<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> data.</p> <h2 id="image-exif-data-user-setting"><a href="#image-exif-data-user-setting" class="header-anchor">#</a> Image Exif data (user setting)</h2> <p>Toggles if users can determine how to handle Exif data.</p> <h2 id="maximum-upload-file-size-mb"><a href="#maximum-upload-file-size-mb" class="header-anchor">#</a> Maximum upload file size [MB]</h2> <p>Determines the maximum image size allowed.</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>This setting is capped by local <code>php.ini</code> <a href="https://v4-docs.chevereto.com/application/stack/php.html#php-configuration" target="_blank" rel="noopener noreferrer">configuration<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p></div> <h2 id="maximum-upload-file-size-guests"><a href="#maximum-upload-file-size-guests" class="header-anchor">#</a> Maximum upload file size (guests)</h2> <p>Same as above, but for guests.</p> <h2 id="file-path"><a href="#file-path" class="header-anchor">#</a> File path</h2> <p>The file system path for storing uploads.</p> <h2 id="storage-mode"><a href="#storage-mode" class="header-anchor">#</a> Storage mode</h2> <p>How uploads will get organized in the file system.</p> <table><thead><tr><th>Value</th> <th>Effect</th></tr></thead> <tbody><tr><td>Datefolders</td> <td>Uses a nested folder structure <code>YYYY/MM/DD</code></td></tr> <tr><td>Direct</td> <td>No folder structure</td></tr></tbody></table> <p>💡 Altering this setting only affects future uploads. Previous uploads won't be affected.</p> <h2 id="file-naming-method"><a href="#file-naming-method" class="header-anchor">#</a> File naming method</h2> <p>How uploads will be named on upload.</p> <ul><li>Source file: <code>./DSC-1313.jpg</code></li></ul> <table><thead><tr><th>Value</th> <th>Effect</th> <th>Example</th></tr></thead> <tbody><tr><td>Original</td> <td>Keep the original file name (will randomize on collisions)</td> <td><code>DSC-1313.jpg</code></td></tr> <tr><td>Random</td> <td>A randomized alphanumeric name</td> <td><code>bJdrpmdfi.jpg</code></td></tr> <tr><td>Mix original + random</td> <td>Keep part of the original filename</td> <td><code>DSC-13pLfm.jpg</code></td></tr> <tr><td>ID</td> <td>Name the uploads as their public (encoded) ID</td> <td><code>kIf.jpg</code></td></tr></tbody></table> <h2 id="thumb-size"><a href="#thumb-size" class="header-anchor">#</a> Thumb size</h2> <p>The with and height for the image thumbs.</p> <h2 id="medium-image-fixed-dimension"><a href="#medium-image-fixed-dimension" class="header-anchor">#</a> Medium image fixed dimension</h2> <p>Determines how medium images will be generated by specifying the resizing criteria.</p> <table><thead><tr><th>Value</th> <th>Effect</th></tr></thead> <tbody><tr><td>Width</td> <td>Resizing fixing width to the target value</td></tr> <tr><td>Height</td> <td>Resizing fixing height to the target value</td></tr></tbody></table> <h2 id="medium-image-fixed-size"><a href="#medium-image-fixed-size" class="header-anchor">#</a> Medium image fixed size</h2> <p>The medium image size. Images will be resized based on the <a href="#medium-image-fixed-dimension">medium image fixed dimension</a> criteria.</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevereto/v4-admin/edit/main/settings/file-uploads.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8c92776e.js" defer></script><script src="/assets/js/2.2e795948.js" defer></script><script src="/assets/js/1.92b2004f.js" defer></script><script src="/assets/js/39.cae2dcf3.js" defer></script>
+  </body>
+</html>
