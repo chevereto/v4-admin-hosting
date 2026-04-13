@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Files | V4 Admin</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.svg">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/logo.svg">
+    <link rel="mask-icon" href="/logo.svg" color="#3eaf7c">
+    <meta name="description" content="Chevereto V4 Admin Manual">
+    <meta property="og:site_name" content="V4 Admin">
+    <meta property="og:title" content="Files">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/dashboard/files.html">
+    <meta name="twitter:title" content="Files">
+    <meta name="twitter:url" content="/dashboard/files.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#23a8e0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/logo.svg">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.bcdb329e.css" as="style"><link rel="preload" href="/assets/js/app.f3109840.js" as="script"><link rel="preload" href="/assets/js/2.f726f08d.js" as="script"><link rel="preload" href="/assets/js/1.92b2004f.js" as="script"><link rel="preload" href="/assets/js/26.761f7627.js" as="script"><link rel="prefetch" href="/assets/js/10.9367db1f.js"><link rel="prefetch" href="/assets/js/11.562eda1e.js"><link rel="prefetch" href="/assets/js/12.d610f66c.js"><link rel="prefetch" href="/assets/js/13.d6ee1c40.js"><link rel="prefetch" href="/assets/js/14.9894935c.js"><link rel="prefetch" href="/assets/js/15.dbc6c065.js"><link rel="prefetch" href="/assets/js/16.f599e15e.js"><link rel="prefetch" href="/assets/js/17.8dd8ef3c.js"><link rel="prefetch" href="/assets/js/18.e459599a.js"><link rel="prefetch" href="/assets/js/19.d6a6f12a.js"><link rel="prefetch" href="/assets/js/20.7430095b.js"><link rel="prefetch" href="/assets/js/21.fc63aa48.js"><link rel="prefetch" href="/assets/js/22.16f6090f.js"><link rel="prefetch" href="/assets/js/23.5a6275d2.js"><link rel="prefetch" href="/assets/js/24.79a075a0.js"><link rel="prefetch" href="/assets/js/25.23cbf2dc.js"><link rel="prefetch" href="/assets/js/27.8a491d97.js"><link rel="prefetch" href="/assets/js/28.450ca433.js"><link rel="prefetch" href="/assets/js/29.04ba95b3.js"><link rel="prefetch" href="/assets/js/3.8e2e7b4a.js"><link rel="prefetch" href="/assets/js/30.910b2005.js"><link rel="prefetch" href="/assets/js/31.954d4078.js"><link rel="prefetch" href="/assets/js/32.ad3bbeb5.js"><link rel="prefetch" href="/assets/js/33.dfdd9854.js"><link rel="prefetch" href="/assets/js/34.9d06516d.js"><link rel="prefetch" href="/assets/js/35.3dc619a0.js"><link rel="prefetch" href="/assets/js/36.da186709.js"><link rel="prefetch" href="/assets/js/37.977b674e.js"><link rel="prefetch" href="/assets/js/38.c9a0fd20.js"><link rel="prefetch" href="/assets/js/39.89983e78.js"><link rel="prefetch" href="/assets/js/4.70d5a8e2.js"><link rel="prefetch" href="/assets/js/40.a503559c.js"><link rel="prefetch" href="/assets/js/41.a19ac2c9.js"><link rel="prefetch" href="/assets/js/42.a91271a2.js"><link rel="prefetch" href="/assets/js/43.1a937d17.js"><link rel="prefetch" href="/assets/js/44.94893da3.js"><link rel="prefetch" href="/assets/js/45.d3a81c04.js"><link rel="prefetch" href="/assets/js/46.ab1a5516.js"><link rel="prefetch" href="/assets/js/47.0b4a143f.js"><link rel="prefetch" href="/assets/js/48.735eae9a.js"><link rel="prefetch" href="/assets/js/49.abe49848.js"><link rel="prefetch" href="/assets/js/5.85757ca3.js"><link rel="prefetch" href="/assets/js/50.5c17cb28.js"><link rel="prefetch" href="/assets/js/51.1c1a3a0d.js"><link rel="prefetch" href="/assets/js/52.1d8891ce.js"><link rel="prefetch" href="/assets/js/53.d8bc57f2.js"><link rel="prefetch" href="/assets/js/54.37f3e6ea.js"><link rel="prefetch" href="/assets/js/55.d247d1f9.js"><link rel="prefetch" href="/assets/js/56.bac7aac2.js"><link rel="prefetch" href="/assets/js/57.96aad18d.js"><link rel="prefetch" href="/assets/js/58.66fd2950.js"><link rel="prefetch" href="/assets/js/59.21d228a9.js"><link rel="prefetch" href="/assets/js/6.583452d9.js"><link rel="prefetch" href="/assets/js/60.e6efb989.js"><link rel="prefetch" href="/assets/js/7.b0b5044e.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.e3b34f7a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bcdb329e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="V4 Admin" class="logo"> <span class="site-name can-hide">V4 Admin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/account/" class="nav-link">
+  Account
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dashboard Menu" class="dropdown-title"><span class="title">Dashboard</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dashboard Menu" class="mobile-dropdown-title"><span class="title">Dashboard</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dashboard/home.html" class="nav-link">
+  Home
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/files.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Files
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/tags.html" class="nav-link">
+  Tags
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/albums.html" class="nav-link">
+  Albums
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/users.html" class="nav-link">
+  Users
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/bulk-importer.html" class="nav-link">
+  Bulk importer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Settings Menu" class="dropdown-title"><span class="title">Settings</span> <span class="arrow down"></span></button> <button type="button" aria-label="Settings Menu" class="mobile-dropdown-title"><span class="title">Settings</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/settings/api.html" class="nav-link">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/settings/banners.html" class="nav-link">
+  Banners
+</a></li><li class="dropdown-item"><!----> <a href="/settings/categories.html" class="nav-link">
+  Categories
+</a></li><li class="dropdown-item"><!----> <a href="/settings/consent-screen.html" class="nav-link">
+  Consent screen
+</a></li><li class="dropdown-item"><!----> <a href="/settings/content.html" class="nav-link">
+  Content
+</a></li><li class="dropdown-item"><!----> <a href="/settings/cookie-compliance.html" class="nav-link">
+  Cookie compliance
+</a></li><li class="dropdown-item"><!----> <a href="/settings/email.html" class="nav-link">
+  Email
+</a></li><li class="dropdown-item"><!----> <a href="/settings/external-services.html" class="nav-link">
+  External services
+</a></li><li class="dropdown-item"><!----> <a href="/settings/file-uploads.html" class="nav-link">
+  File uploads
+</a></li><li class="dropdown-item"><!----> <a href="/settings/flood-protection.html" class="nav-link">
+  Flood protection
+</a></li><li class="dropdown-item"><!----> <a href="/settings/guest-api.html" class="nav-link">
+  Guest api
+</a></li><li class="dropdown-item"><!----> <a href="/settings/homepage.html" class="nav-link">
+  Homepage
+</a></li><li class="dropdown-item"><!----> <a href="/settings/ip-bans.html" class="nav-link">
+  IP Bans
+</a></li><li class="dropdown-item"><!----> <a href="/settings/languages.html" class="nav-link">
+  Languages
+</a></li><li class="dropdown-item"><!----> <a href="/settings/listings.html" class="nav-link">
+  Listings
+</a></li><li class="dropdown-item"><!----> <a href="/settings/login-providers.html" class="nav-link">
+  Login Providers
+</a></li><li class="dropdown-item"><!----> <a href="/settings/logo.html" class="nav-link">
+  Logo
+</a></li><li class="dropdown-item"><!----> <a href="/settings/pages.html" class="nav-link">
+  Pages
+</a></li><li class="dropdown-item"><!----> <a href="/settings/routing.html" class="nav-link">
+  Routing
+</a></li><li class="dropdown-item"><!----> <a href="/settings/semantics.html" class="nav-link">
+  Semantics
+</a></li><li class="dropdown-item"><!----> <a href="/settings/site-storage.html" class="nav-link">
+  Site storage
+</a></li><li class="dropdown-item"><!----> <a href="/settings/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-item"><!----> <a href="/settings/theme.html" class="nav-link">
+  Theme
+</a></li><li class="dropdown-item"><!----> <a href="/settings/tools.html" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/settings/upload-plugin.html" class="nav-link">
+  Upload plugin
+</a></li><li class="dropdown-item"><!----> <a href="/settings/upload-storage.html" class="nav-link">
+  Upload storage
+</a></li><li class="dropdown-item"><!----> <a href="/settings/users.html" class="nav-link">
+  Users
+</a></li><li class="dropdown-item"><!----> <a href="/settings/watermarks.html" class="nav-link">
+  Watermarks
+</a></li><li class="dropdown-item"><!----> <a href="/settings/website.html" class="nav-link">
+  Website
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Features Menu" class="dropdown-title"><span class="title">Features</span> <span class="arrow down"></span></button> <button type="button" aria-label="Features Menu" class="mobile-dropdown-title"><span class="title">Features</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/features/upload-storage.html" class="nav-link">
+  Upload storage
+</a></li><li class="dropdown-item"><!----> <a href="/features/login-providers.html" class="nav-link">
+  Login providers
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/account/" class="nav-link">
+  Account
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dashboard Menu" class="dropdown-title"><span class="title">Dashboard</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dashboard Menu" class="mobile-dropdown-title"><span class="title">Dashboard</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dashboard/home.html" class="nav-link">
+  Home
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/files.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Files
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/tags.html" class="nav-link">
+  Tags
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/albums.html" class="nav-link">
+  Albums
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/users.html" class="nav-link">
+  Users
+</a></li><li class="dropdown-item"><!----> <a href="/dashboard/bulk-importer.html" class="nav-link">
+  Bulk importer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Settings Menu" class="dropdown-title"><span class="title">Settings</span> <span class="arrow down"></span></button> <button type="button" aria-label="Settings Menu" class="mobile-dropdown-title"><span class="title">Settings</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/settings/api.html" class="nav-link">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/settings/banners.html" class="nav-link">
+  Banners
+</a></li><li class="dropdown-item"><!----> <a href="/settings/categories.html" class="nav-link">
+  Categories
+</a></li><li class="dropdown-item"><!----> <a href="/settings/consent-screen.html" class="nav-link">
+  Consent screen
+</a></li><li class="dropdown-item"><!----> <a href="/settings/content.html" class="nav-link">
+  Content
+</a></li><li class="dropdown-item"><!----> <a href="/settings/cookie-compliance.html" class="nav-link">
+  Cookie compliance
+</a></li><li class="dropdown-item"><!----> <a href="/settings/email.html" class="nav-link">
+  Email
+</a></li><li class="dropdown-item"><!----> <a href="/settings/external-services.html" class="nav-link">
+  External services
+</a></li><li class="dropdown-item"><!----> <a href="/settings/file-uploads.html" class="nav-link">
+  File uploads
+</a></li><li class="dropdown-item"><!----> <a href="/settings/flood-protection.html" class="nav-link">
+  Flood protection
+</a></li><li class="dropdown-item"><!----> <a href="/settings/guest-api.html" class="nav-link">
+  Guest api
+</a></li><li class="dropdown-item"><!----> <a href="/settings/homepage.html" class="nav-link">
+  Homepage
+</a></li><li class="dropdown-item"><!----> <a href="/settings/ip-bans.html" class="nav-link">
+  IP Bans
+</a></li><li class="dropdown-item"><!----> <a href="/settings/languages.html" class="nav-link">
+  Languages
+</a></li><li class="dropdown-item"><!----> <a href="/settings/listings.html" class="nav-link">
+  Listings
+</a></li><li class="dropdown-item"><!----> <a href="/settings/login-providers.html" class="nav-link">
+  Login Providers
+</a></li><li class="dropdown-item"><!----> <a href="/settings/logo.html" class="nav-link">
+  Logo
+</a></li><li class="dropdown-item"><!----> <a href="/settings/pages.html" class="nav-link">
+  Pages
+</a></li><li class="dropdown-item"><!----> <a href="/settings/routing.html" class="nav-link">
+  Routing
+</a></li><li class="dropdown-item"><!----> <a href="/settings/semantics.html" class="nav-link">
+  Semantics
+</a></li><li class="dropdown-item"><!----> <a href="/settings/site-storage.html" class="nav-link">
+  Site storage
+</a></li><li class="dropdown-item"><!----> <a href="/settings/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-item"><!----> <a href="/settings/theme.html" class="nav-link">
+  Theme
+</a></li><li class="dropdown-item"><!----> <a href="/settings/tools.html" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/settings/upload-plugin.html" class="nav-link">
+  Upload plugin
+</a></li><li class="dropdown-item"><!----> <a href="/settings/upload-storage.html" class="nav-link">
+  Upload storage
+</a></li><li class="dropdown-item"><!----> <a href="/settings/users.html" class="nav-link">
+  Users
+</a></li><li class="dropdown-item"><!----> <a href="/settings/watermarks.html" class="nav-link">
+  Watermarks
+</a></li><li class="dropdown-item"><!----> <a href="/settings/website.html" class="nav-link">
+  Website
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Features Menu" class="dropdown-title"><span class="title">Features</span> <span class="arrow down"></span></button> <button type="button" aria-label="Features Menu" class="mobile-dropdown-title"><span class="title">Features</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/features/upload-storage.html" class="nav-link">
+  Upload storage
+</a></li><li class="dropdown-item"><!----> <a href="/features/login-providers.html" class="nav-link">
+  Login providers
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Files</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/dashboard/files.html#listing" class="sidebar-link">Listing</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dashboard/files.html#sorting" class="sidebar-link">Sorting</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dashboard/files.html#per-file-controls" class="sidebar-link">Per-file controls</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dashboard/files.html#bulk-selection" class="sidebar-link">Bulk selection</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dashboard/files.html#actions" class="sidebar-link">Actions</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dashboard/files.html#assign-category" class="sidebar-link">Assign category</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dashboard/files.html#moderation" class="sidebar-link">Moderation</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="files"><a href="#files" class="header-anchor">#</a> Files</h1> <p><code>/dashboard/files</code></p> <p>At <strong>Dashboard Files</strong> you can administer all the files uploaded to the system. It provides a full-screen grid listing of every file across all users, with tools to sort, browse, moderate, and bulk-manage content.</p> <h2 id="listing"><a href="#listing" class="header-anchor">#</a> Listing</h2> <p>Files are displayed as a responsive image grid. Each item shows inline controls on hover: a delete button, a flag button, and a checkbox for selection.</p> <h2 id="sorting"><a href="#sorting" class="header-anchor">#</a> Sorting</h2> <p>Use the sort menu next to the <strong>Files</strong> heading to change the order of the listing.</p> <table><thead><tr><th>Option</th> <th>Description</th></tr></thead> <tbody><tr><td>Most recent</td> <td>Files ordered from newest to oldest (default)</td></tr> <tr><td>Oldest</td> <td>Files ordered from oldest to newest</td></tr> <tr><td>Most viewed</td> <td>Files ordered by total view count</td></tr> <tr><td>Most liked</td> <td>Files ordered by total like count</td></tr></tbody></table> <h2 id="per-file-controls"><a href="#per-file-controls" class="header-anchor">#</a> Per-file controls</h2> <p>Each file in the grid exposes the following controls on hover:</p> <table><thead><tr><th>Control</th> <th>Description</th></tr></thead> <tbody><tr><td>Delete</td> <td>Removes the file permanently (confirmation required)</td></tr> <tr><td>Flag</td> <td>Marks the file as safe or unsafe for content moderation</td></tr> <tr><td>Select</td> <td>Adds the file to the current selection for bulk actions</td></tr></tbody></table> <h2 id="bulk-selection"><a href="#bulk-selection" class="header-anchor">#</a> Bulk selection</h2> <p>Click <strong>All</strong> in the listing toolbar to select every visible file, or check individual items using their selection checkbox. Use <strong>Clear</strong> (or press <code>Z</code>) to deselect everything.</p> <table><thead><tr><th>Action</th> <th>Keyboard shortcut</th></tr></thead> <tbody><tr><td>Select all</td> <td><code>.</code></td></tr> <tr><td>Clear selection</td> <td><code>Z</code></td></tr></tbody></table> <h2 id="actions"><a href="#actions" class="header-anchor">#</a> Actions</h2> <p>With one or more files selected, the <strong>Actions</strong> menu becomes available. The following bulk operations are supported:</p> <table><thead><tr><th>Action</th> <th>Key</th> <th>Description</th></tr></thead> <tbody><tr><td>Delete</td> <td><code>Del</code></td> <td>Permanently removes all selected files (confirmation required)</td></tr> <tr><td>Assign category</td> <td><code>C</code></td> <td>Sets a category on all selected files</td></tr> <tr><td>Flag as safe</td> <td><code>V</code></td> <td>Marks selected files as safe content</td></tr> <tr><td>Flag as unsafe</td> <td><code>F</code></td> <td>Marks selected files as not safe for work (NSFW)</td></tr> <tr><td>Approve</td> <td>—</td> <td>Approves selected files when upload moderation is enabled</td></tr></tbody></table> <p>💡 Approval actions are only shown when the system is configured to require upload moderation. See <a href="/settings/file-uploads.html">File uploads settings</a> for details.</p> <h2 id="assign-category"><a href="#assign-category" class="header-anchor">#</a> Assign category</h2> <p>To assign a category to one or more files:</p> <ol><li>Select the target files using their checkboxes or click <strong>All</strong>.</li> <li>Open the <strong>Actions</strong> menu and choose <strong>Assign category</strong>, or press <code>C</code>.</li> <li>Pick a category from the dropdown and confirm.</li></ol> <p>The category will be applied to all selected files at once.</p> <h2 id="moderation"><a href="#moderation" class="header-anchor">#</a> Moderation</h2> <p>Dashboard Files is the primary place to review and act on flagged or pending content across the entire system. Administrators can flag content as safe or unsafe, and approve or remove content in bulk.</p> <table><thead><tr><th>Moderation action</th> <th>Effect</th></tr></thead> <tbody><tr><td>Flag as safe</td> <td>Clears any NSFW flag; content appears normally in listings</td></tr> <tr><td>Flag as unsafe</td> <td>Marks content as NSFW; visibility follows content settings</td></tr> <tr><td>Approve</td> <td>Publishes content held in the moderation queue</td></tr> <tr><td>Delete</td> <td>Permanently removes content from the system</td></tr></tbody></table> <p>💡 NSFW visibility in listings is controlled by <a href="/settings/content.html">Content settings</a>.</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevereto/v4-admin/edit/main/dashboard/files.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f3109840.js" defer></script><script src="/assets/js/2.f726f08d.js" defer></script><script src="/assets/js/1.92b2004f.js" defer></script><script src="/assets/js/26.761f7627.js" defer></script>
+  </body>
+</html>
